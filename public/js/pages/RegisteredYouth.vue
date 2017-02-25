@@ -15,12 +15,12 @@
             <div class="row">
                 <div class="col s6">
                     <a href="/male-youth">
-                        <button class="btn-large waves-effect waves-light">Males</button>
+                        <button class="btn-large waves-effect waves-light right">Males</button>
                     </a>
                 </div>
                 <div class="col s6">
                     <a href="/female-youth">
-                        <button class="btn-large waves-effect waves-light">Females</button>
+                        <button class="btn-large waves-effect waves-light center">Females</button>
                     </a>
                 </div>
             </div>
