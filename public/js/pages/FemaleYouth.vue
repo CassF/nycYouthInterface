@@ -1,6 +1,11 @@
 <template>
     <main-layout>
         <div class="container">
+            <div class="row">
+                <div class="col s6">
+                    <h2 style="text-align: left;"> Count: {{ youthArray.length }}</h2>
+                </div>
+            </div>
             <table class="striped" name="course-table">
 
                 <thead>
