@@ -1,5 +1,8 @@
 <template>
     <main-layout>
+        <div class="left">
+            <a href="/registered-youth"> <img class="logo" src="images/back.png"></a>
+        </div>
         <div class="container">
             <div class="title">
                 <h1>Females</h1>
