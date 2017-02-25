@@ -3,7 +3,7 @@
         <div class="row " id="titleRegister">
             <div class="container">
                 <div class="title">
-                    <h2>Make Payment</h2>
+                    <h1>Make Payment</h1>
                 </div>
                 <div v-if="!formSubmitted" @submit.prevent="submitForm()">
                     <form class="col s12">

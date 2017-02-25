@@ -2,7 +2,7 @@
     <main-layout>
         <div class="container">
             <div class="title">
-                <h2>Registered Youth</h2>
+                <h1>Registered Youth</h1>
             </div>
             <div class="row">
                 <div class="col s6">

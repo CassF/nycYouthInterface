@@ -1,6 +1,9 @@
 <template>
     <main-layout>
         <div class="container">
+            <div class="title">
+                <h1>Males</h1>
+            </div>
             <div class="row">
                 <div class="col s6">
                     <h2 style="text-align: left;"> Count: {{ youthArray.length }}</h2>
