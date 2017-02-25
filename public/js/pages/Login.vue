@@ -40,7 +40,6 @@
                               params: {password: pw, username: user} 
         })
         .then((result) => { // if successful login --> result.body = true
-          console.log(result);
             if(result.body === 'true'){
               let token = jwt.sign('token', 'somethingnotobvious')
               this.$cookie.set('token', token, 1);
