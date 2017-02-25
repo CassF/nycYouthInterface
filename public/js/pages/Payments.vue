@@ -1,6 +1,7 @@
 <template>
     <main-layout>
         <div class="container">
+            <h3>{{firstName}} {{lastName}}</h3>
             <table class="striped" name="course-table">
 
                 <thead>
@@ -33,6 +34,8 @@
             return {
                 date: [],
                 amount: [],
+                firstName:'',
+                lastName: '',
                 youthPaymentsArray: []
             }
         },
@@ -111,6 +114,16 @@
                     for (let i in youthPD) {
                         this.youthPaymentsArray.push([new Date(youthPD[i].date).toISOString().slice(0, 10), youthPD[i].amount, youthPD[i]._id]);
                     }
+                })
+                .catch(err => {
+                    console.log(err);
+                });
+
+            api.callApi({ method: 'GET', path: `/api/nyc/${youthUrl.youth_id}` })
+                .then((result) => {
+                    let myObj = JSON.parse(result.body).youthsDetails;
+                    this.firstName = myObj.firstName;
+                    this.lastName = myObj.lastName;
                 })
                 .catch(err => {
                     console.log(err);
