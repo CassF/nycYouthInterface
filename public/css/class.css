@@ -1,14 +1,3 @@
-/*.container {
-background-color: #F7F7F7;
-}*/
-
-img {
-	margin-left: 0px;
-	margin-right: 0px;
-	margin-top: 5px;
-	display: block;
-}
-
 img {
     display: block;
     margin: 0 auto;
@@ -18,7 +7,7 @@ img {
 }
 
 body{
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Handlee', cursive;
 	background-color: #F7F7F7;
 }
 
@@ -26,6 +15,14 @@ label {
   display: block;
   color: #7d7d7d;
   font-size: 1.4rem;
+}
+
+/* Tables */
+td {
+	font-family: 'Ubuntu', sans-serif;
+}
+th {
+	font-size: 20px;
 }
 
 .floatBlock {
@@ -37,26 +34,13 @@ label {
 	margin: 0;
 }
 
-.paymentOptions {
-	border: none;
-	display: flex;
-	flex-direction: row;
-	justify-content: flex-start;
-	break-before: always;
-	margin: 0 0 3em 0;
-}
-
-#purchaseOrder {
-	margin: 0 0 2em 0;
-}
-
 p{
 	display:inline-flex;
-	font-family: 'Ubuntu', sans-serif;
+	font-family: 'Handlee', cursive;
 }
 
 h2{
-	font-family: 'Ubuntu', sans-serif;
+	font-family: 'Handlee', cursive;
 	text-align: center;
 }
 
@@ -68,18 +52,27 @@ h2{
 nav {
 	background-color:#E0AA7C;
 	border-bottom: 3px solid #F7F7F7;
-  font-family: 'Ubuntu', sans-serif;
+	font-family: 'Handlee', cursive;
 }
-nav ul li a:hover {
-    color: #E0AA7C;
+
+button {
+	font-family: 'Handlee', cursive;
 }
 
 nav ul li a {
     width: 100%;
     color: white;
+	font-size: 20px;
     text-align: center;
 }
 
+nav ul a:hover {
+    background-color:white;
+}
+
+nav ul li a:hover {
+    color: #E0AA7C;
+}
 /* End of navbar */
 
 /* Buttons */
@@ -153,8 +146,8 @@ textarea.materialize-textarea:focus.valid {
 
 /* Checkboxes */
 [type="checkbox"]:checked + label:before {
-    border-right: 2px solid #34BEEF;
-    border-bottom: 2px solid #34BEEF;
+    border-right: 2px solid #E0AA7C;
+    border-bottom: 2px solid #E0AA7C;
 }
 /*End of Checkboxes */
 
@@ -162,10 +155,6 @@ textarea.materialize-textarea:focus.valid {
 	column-count: 2;
 	column-width: 50%;
 	column-gap: 0;
-}
-
-#viewabsent {
-	column-span: all;
 }
 
 .homeButton {
@@ -179,6 +168,7 @@ textarea.materialize-textarea:focus.valid {
 }
 .btn-large:hover, .btn-large:active {
 	background-color: #2e373c;
+	color: #E0AA7C;
 }
 .btn {
 	background-color: #E0AA7C;
@@ -186,6 +176,7 @@ textarea.materialize-textarea:focus.valid {
 
 .btn:hover, .btn:active {
 	background-color: #2e373c;
+	color: #E0AA7C;
 }
 
 

@@ -1,12 +1,15 @@
 <template>
     <main-layout>
         <div class="container">
+            <div class="title">
+                <h2>Registered Youth</h2>
+            </div>
             <div class="row">
                 <div class="col s6">
                     <h2 style="text-align: left;"> Count: {{ youthArray.length }}</h2>
                 </div>
                 <div class="col s6">
-                    <h2 style="text-align: left;">Total: £{{amount}}</h2>
+                    <h2 style="text-align: right;">Total: £{{amount}}</h2>
                 </div>
             </div>
             <div class="row">
@@ -38,9 +41,6 @@
                         <td>{{details[0]}}</td>
                         <td>{{details[1]}}</td>
                         <td>£{{details[2]}}</td>
-                        <!--<td>
-                            <button type="button" class="btn waves-effect waves-light" v-on:click="allYouth(details[3])">View</button>
-                        </td>-->
                         <td>
                             <button type="button" class="btn waves-effect waves-light" v-on:click="youthsPaymentDetails(details[3])">Payments</button>
                         </td>
