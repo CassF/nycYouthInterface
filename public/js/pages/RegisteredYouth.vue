@@ -1,6 +1,9 @@
 <template>
     <main-layout>
         <div class="container">
+                                    <a href="/female-youth">
+                            <button class="btn-large waves-effect waves-light">Registered Youth</button>
+                        </a>
             <table class="striped" name="course-table">
 
                 <thead>

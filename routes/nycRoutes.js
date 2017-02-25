@@ -57,6 +57,22 @@ router.get('/', (req, res) => {
 });
 
 //get request to display records from the database
+router.get('/females', (req, res) => {
+    request({
+        uri: NYC_API + '/youth/females',
+        method: "GET"
+    },
+
+    function (error, response, body) {
+        if (!error && response.statusCode == 200) {
+            res.json(body); 
+        } else{
+            res.json(error);
+        }
+    });
+});
+
+//get request to display records from the database
 router.get('/:id', (req, res) => {
     request({
         uri: NYC_API + '/youth/' + req.params.id,
