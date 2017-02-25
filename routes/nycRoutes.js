@@ -72,6 +72,38 @@ router.get('/females', (req, res) => {
     });
 });
 
+router.get('/males', (req, res) => {
+    request({
+        uri: NYC_API + '/youth/males',
+        method: "GET"
+    },
+
+    function (error, response, body) {
+        if (!error && response.statusCode == 200) {
+            res.json(body); 
+        } else{
+            res.json(error);
+        }
+    });
+});
+
+//TOTAL
+router.get('/total', (req, res) => {
+    request({
+        uri: NYC_API + '/totalpayment',
+        method: "GET"
+    },
+
+    function (error, response, body) {
+        if (!error && response.statusCode == 200) {
+            res.json(body); 
+        } else{
+            res.json(error);
+        }
+    });
+});
+
+
 //get request to display records from the database
 router.get('/:id', (req, res) => {
     request({

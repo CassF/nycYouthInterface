@@ -1,9 +1,19 @@
 <template>
     <main-layout>
         <div class="container">
-                                    <a href="/female-youth">
-                            <button class="btn-large waves-effect waves-light">Registered Youth</button>
-                        </a>
+            <h2 style="text-align: left;">TOTAL: £{{amount}}</h2>
+            <div class="row">
+                <div class="col s6">
+                    <a href="/male-youth">
+                        <button class="btn-large waves-effect waves-light">Males</button>
+                    </a>
+                </div>
+                <div class="col s6">
+                    <a href="/female-youth">
+                        <button class="btn-large waves-effect waves-light">Females</button>
+                    </a>
+                </div>
+            </div>
             <table class="striped" name="course-table">
 
                 <thead>
@@ -50,7 +60,8 @@
                 firstName: [],
                 lastName: [],
                 youthArray: [],
-                balance: []
+                balance: [],
+                amount:''
             }
         },
         methods: {
@@ -77,6 +88,15 @@
                         this.youthArray.push([youth[i].firstName, youth[i].lastName, youth[i].balance, youth[i]._id]);
                         // }
                     }
+                })
+                .catch(err => {
+                    console.log(err);
+                });
+
+            api.callApi({ method: 'GET', path: '/api/nyc/total' })
+                .then((result) => {
+                    let myObj = JSON.parse(result.body).allPayments;
+                    this.amount = myObj[0].amount;
                 })
                 .catch(err => {
                     console.log(err);
