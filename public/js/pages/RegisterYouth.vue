@@ -21,8 +21,19 @@
                         </div>
                         <div class="row">
                             <label for="balance">Amount</label>
-                            <div class="input-field col s12">
+                            <div class="input-field col s6">
                                 <input v-model="balance" id="balance" type="text">
+                            </div>
+                        </div>
+                        <label>Gender</label>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <input type="checkbox" id="test5" name="female" v-model="female" value="true" />
+                                <label for="test5">Female</label>
+                            </div>
+                            <div class="input-field col s12">
+                                <input type="checkbox" id="test6" name="male" v-model="male" value="true" />
+                                <label for="test6">Male</label>
                             </div>
                         </div>
                         <button class="btn waves-effect waves-light" type="submit" name="action">Submit</button>
@@ -51,6 +62,8 @@
                 firstName: '',
                 lastName: '',
                 balance: '',
+                female: '',
+                male: '',
                 formSubmitted: false
             }
         },
@@ -69,7 +82,7 @@
              * */
             submitForm() {
                 this.formSubmitted = true;
-                api.callApi({ method: 'POST', path: '/api/nyc', params: { firstName: this.firstName, lastName: this.lastName, balance: this.balance } })
+                api.callApi({ method: 'POST', path: '/api/nyc', params: { firstName: this.firstName, lastName: this.lastName, balance: this.balance, female: this.female, male: this.male } })
                     .then(result => {
                         //redirecting to the view registered youth page
                         window.location.href = "/registered-youth";

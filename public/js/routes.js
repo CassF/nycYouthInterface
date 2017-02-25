@@ -5,5 +5,7 @@ export default {
     '/youthprofile': 'YouthProfile',
     '/payments': 'Payments',
     '/addpayment': 'AddPayment',
-    '/login':'Login'
+    '/login':'Login',
+    '/male-youth' : 'MaleYouth',
+    '/female-youth' : 'FemaleYouth'
 }
