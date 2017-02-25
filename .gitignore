@@ -1,0 +1,7 @@
+node_modules
+.env
+.DS_Store
+vue.js
+npm-debug-log
+.babelrc
+webpack.config.js
