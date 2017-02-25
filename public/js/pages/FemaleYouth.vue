@@ -67,6 +67,8 @@
                 .then((result) => {
                     let youth = JSON.parse(result.body).femaleYouth;
                     //access the array
+                    console.log(youth);
+                    console.log(result);
                     for (let i in youth) {
                         this.youthArray.push([youth[i].firstName, youth[i].lastName, youth[i].balance, youth[i]._id]);
                         // }
