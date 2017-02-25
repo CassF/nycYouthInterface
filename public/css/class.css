@@ -1,3 +1,11 @@
+/* MAIN */
+body{
+    font-family: 'Handlee', cursive;
+	background-color: #F7F7F7;
+}
+/* END OF MAIN */
+
+/* Mainpage logo */
 img {
     display: block;
     margin: 0 auto;
@@ -5,17 +13,15 @@ img {
 .logo {
 	margin-top: 5px;
 }
+/* End of mainpage logo */
 
-body{
-    font-family: 'Handlee', cursive;
-	background-color: #F7F7F7;
-}
-
+/* Labels */
 label {
   display: block;
   color: #7d7d7d;
   font-size: 1.4rem;
 }
+/* End of Labels */
 
 /* Tables */
 td {
@@ -24,21 +30,16 @@ td {
 th {
 	font-size: 20px;
 }
+/* End of Tables */
 
-.floatBlock {
-  margin: 0 1.81em 0 0;
-}
-
-.labelish {
-	color:#7d7d7d;
-	margin: 0;
-}
-
+/* Paragraphs */
 p{
 	display:inline-flex;
 	font-family: 'Handlee', cursive;
 }
+/* End of Paragraphs */
 
+/* Headings */
 h1 {
 	font-family: 'Handlee', cursive;
 	text-align: center;
@@ -47,19 +48,12 @@ h2{
 	font-family: 'Handlee', cursive;
 	text-align: center;
 }
-
-#viewabsent{
-	margin-top: 20%;
-}
+/* End of Headings */
 
 /* Navbar */
 nav {
 	background-color:#E0AA7C;
 	border-bottom: 3px solid #F7F7F7;
-	font-family: 'Handlee', cursive;
-}
-
-button {
 	font-family: 'Handlee', cursive;
 }
 
@@ -78,8 +72,6 @@ nav ul li a:hover {
     color: #E0AA7C;
 }
 /* End of navbar */
-
-/* Buttons */
 
 /* Input fields */   
 input:not([type]):focus:not([readonly]),
@@ -139,15 +131,6 @@ textarea.materialize-textarea:focus.valid {
 }
 /* End of input fields */  
 
-/* Radio Buttons */
-[type="radio"]:checked + label:after, [type="radio"].with-gap:checked + label:before, [type="radio"].with-gap:checked + label:after {
-    border: 2px solid #34BEEF;
-}
-[type="radio"]:checked + label:after, [type="radio"].with-gap:checked + label:after {
-    background-color: #34BEEF;
-}
-/* End of Radio Buttons */
-
 /* Checkboxes */
 [type="checkbox"]:checked + label:before {
     border-right: 2px solid #E0AA7C;
@@ -155,6 +138,7 @@ textarea.materialize-textarea:focus.valid {
 }
 /*End of Checkboxes */
 
+/* Homepage */
 #homeList {
 	column-count: 2;
 	column-width: 50%;
@@ -164,6 +148,13 @@ textarea.materialize-textarea:focus.valid {
 .homeButton {
 		margin: 0.2%;
 }
+/* End of Homepage */
+
+/* Buttons */
+button {
+	font-family: 'Handlee', cursive;
+}
+
 .btn-large {
 	background-color: #E0AA7C;
 	height: 5rem;
@@ -182,5 +173,16 @@ textarea.materialize-textarea:focus.valid {
 	background-color: #2e373c;
 	color: #E0AA7C;
 }
+/* End of Buttons */
 
-
+/* Footer */
+.footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  background-color: #efefef;
+  text-align: center;
+}
+/* End of Footer */

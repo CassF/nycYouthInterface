@@ -1,10 +1,10 @@
 <template>
     <main-layout>
         <div class="row " id="titleRegister">
+            <div class="title">
+                <h2>Register Youth</h2>
+            </div>
             <div class="container">
-                <div class="title">
-                    <h2>Register Youth</h2>
-                </div>
                 <div v-if="!formSubmitted" @submit.prevent="submitForm()">
                     <form class="col s12">
                         <div class="row">

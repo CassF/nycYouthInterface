@@ -9,7 +9,7 @@
                             <button class="btn-large waves-effect waves-light">Registered Youth</button>
                         </a>
                     </li>
-                     <li class="homeButton center">
+                    <li class="homeButton center">
                         <a href="/register">
                             <button class="btn-large waves-effect waves-light">Register A Youth</button>
                         </a>
@@ -17,6 +17,13 @@
                 </ul>
             </div>
         </div>
+        <footer>
+            <div class="footer">
+                <div class="col s6 copyright right">
+                    © 2016 CASSANDRA FRIMPONG.
+                </div>
+            </div>
+        </footer>
     </main-layout>
 </template>
 
@@ -28,9 +35,10 @@
             MainLayout
         },
         methods: {
-        beforeMount: function(){
-            console.log('Mounting');     
+            beforeMount: function () {
+                console.log('Mounting');
+            }
         }
     }
-}
+
 </script>
