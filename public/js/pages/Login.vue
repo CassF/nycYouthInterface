@@ -1,3 +1,4 @@
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
 <template>
   <div class="col-sm-4 col-sm-offset-4">
     <div class="container">
