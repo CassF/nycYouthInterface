@@ -1,6 +1,6 @@
 // import {router} from '../index'
 // Require dependencies 
-const API_URL = 'http://localhost:3001/'
+const API_URL = 'http://localhost:3000/'
 const LOGIN_URL = API_URL 
 const SIGNUP_URL = API_URL + 'users/'
 const api = require("./services/Api");

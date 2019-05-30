@@ -29,13 +29,15 @@
     },
     methods: {
       submit() {
-        console.log(username);
         let credentials = {
           username: this.credentials.username,
           password: this.credentials.password
         }
       },
       login(pw, user) {
+        console.log(pw);
+        console.log(user);
+
         api.callApi({ method: 'POST', path: "api/nyc/secure", 
                               params: {password: pw, username: user} 
         })

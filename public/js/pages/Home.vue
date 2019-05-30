@@ -2,7 +2,7 @@
     <main-layout>
         <div class="container">
             <div>
-                <img class="logo" src="images/nyc17.jpg">
+                <img class="logo" src="images/breakout19.png">
                 <ul id="homeList">
                     <li id="viewstudent" class="homeButton center">
                         <a href="/registered-youth">
@@ -42,3 +42,10 @@
     }
 
 </script>
+
+<style>
+    body {
+        font-family: 'Handlee', cursive;
+        background-color: #47B5AA;
+    }
+</style>

@@ -1,7 +1,7 @@
 /* MAIN */
 body{
     font-family: 'Handlee', cursive;
-	background-color: #F7F7F7;
+	background-color: #F7F7F7 !important;
 }
 /* END OF MAIN */
 
@@ -52,7 +52,7 @@ h2{
 
 /* Navbar */
 nav {
-	background-color:#E0AA7C;
+	background-color:#47B5AA;
 	border-bottom: 3px solid #F7F7F7;
 	font-family: 'Handlee', cursive;
 }
@@ -69,7 +69,7 @@ nav ul a:hover {
 }
 
 nav ul li a:hover {
-    color: #E0AA7C;
+    color: #47B5AA;
 }
 /* End of navbar */
 
@@ -87,8 +87,8 @@ input[type=tel]:focus:not([readonly]),
 input[type=number]:focus:not([readonly]),
 input[type=search]:focus:not([readonly]),
 textarea.materialize-textarea:focus:not([readonly]) {
-    border-bottom: 1px solid #E0AA7C!important;
-    box-shadow: 0 1px 0 0 #E0AA7C!important;
+    border-bottom: 1px solid #47B5AA!important;
+    box-shadow: 0 1px 0 0 #47B5AA!important;
 }
 
 input:not([type]):focus:not([readonly]) + label,
@@ -104,7 +104,7 @@ input[type=tel]:focus:not([readonly]) + label,
 input[type=number]:focus:not([readonly]) + label,
 input[type=search]:focus:not([readonly]) + label,
 textarea.materialize-textarea:focus:not([readonly]) + label {
-    color: #E0AA7C;
+    color: #47B5AA;
 }
 
 input:not([type]).valid, input:not([type]):focus.valid, 
@@ -122,7 +122,7 @@ input[type=number].valid, input[type=number]:focus.valid,
 input[type=search].valid, input[type=search]:focus.valid, 
 textarea.materialize-textarea.valid, 
 textarea.materialize-textarea:focus.valid {
-    border-bottom: 1px solid #E0AA7C;
+    border-bottom: 1px solid #47B5AA;
     box-shadow: 0 1px 0 0 #2E373C;
 }
 
@@ -133,8 +133,8 @@ textarea.materialize-textarea:focus.valid {
 
 /* Checkboxes */
 [type="checkbox"]:checked + label:before {
-    border-right: 2px solid #E0AA7C;
-    border-bottom: 2px solid #E0AA7C;
+    border-right: 2px solid #47B5AA;
+    border-bottom: 2px solid #47B5AA;
 }
 /*End of Checkboxes */
 
@@ -156,22 +156,22 @@ button {
 }
 
 .btn-large {
-	background-color: #E0AA7C;
+	background-color: #47B5AA;
 	height: 5rem;
 	width: 15rem;
 	margin-bottom: 1rem;
 }
 .btn-large:hover, .btn-large:active {
 	background-color: #2e373c;
-	color: #E0AA7C;
+	color: #47B5AA;
 }
 .btn {
-	background-color: #E0AA7C;
+	background-color: #47B5AA;
 }
 
 .btn:hover, .btn:active {
 	background-color: #2e373c;
-	color: #E0AA7C;
+	color: #47B5AA;
 }
 /* End of Buttons */
 
